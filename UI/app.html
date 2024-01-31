@@ -1,0 +1,554 @@
+<!-- app.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Classifier</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dropzone.min.css">
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="#">Person Classifier</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="row" style="display: none;">
+            <div class="col card-wrapper" data-player="Bhupendrabhai Patel">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/bhupendrabhai patel.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Bhupendrabhai Patel: CM - Gujarat </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Conrad Sangma">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/conrad sangma.gif" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Conrad Sangma: CM - Meghalaya </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Eknath Shinde">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/eknath sharma.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Eknath Shinde: CM - Maharashtra </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Hemant Soren">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/Hemant-Soren.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Hemant Soren: CM - Jharkhand </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Himanta Biswa Sarma">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/himanta biswa sarma.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Himanta Biswa Sarma: CM - Assam </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Lalduhoma">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/lalduhoma.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Lalduhoma: CM - Mizoram </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="M. K. Stalin">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/mk stalin.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">M. K. Stalin: CM - Tamil Nadu </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Mamata Banerjee">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/mamta bnaerjee.gif" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Mamata Banerjee: CM - West Bengal </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Manik Saha">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/manik shah.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Manik Saha: CM - Tripura </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="manohar Lal Khattar">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/220px-Manohar_Lal_Khattar_2015.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Manohar Lal Khattar: CM - Haryana </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Mohan Yadav">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/1702448716_mohan-yadav.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Mohan Yadav: CM - Madhya Pradesh </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="N. Biren Singh">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/N. biren singh.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">N. Biren Singh: CM - Manipur </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="N. Rangaswamy">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/220px-N_Rangaswamy.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">N. Rangaswamy: CM - Puducherry </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="narendra modi">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/31-Narendra-Modi-Get.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Narendra modi: PM of INDIA </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Naveen Patnaik">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/19-naveen-patnaik-602.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Naveen Patnaik: CM - Odisha </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Pinarayi Vijayan">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/Pinarayi Vijayan.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Pinarayi Vijayan: CM - Kerala </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Pushkar Singh Dhami">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/16-Pushkar-Singh-Dhami.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Pushkar Singh Dhami: CM - Uttarakhand </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Neiphiu Rio">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/neiphiu rio.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Neiphiu Rio: CM - Nagaland </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Nitish Kumar">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/16-Nitish-Kumar.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Nitish Kumar: CM - Bihar </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Pema Khandu">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/pema khandu.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Pema Khandu: CM - Arunachal Pradesh </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card-wrapper" data-player="Revanth Reddy">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/736562-revanth-reddy.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Revanth Reddy: CM - Telangana </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="sukhvinder Singh Sukhu">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/IMG_Sukhvinder_Singh_Suk_2_1_P5AG5BTB (1).jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">sukhvinder Singh Sukhu: CM - Himachal Pradesh </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Pramod Sawant">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/02pramod-sawant.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Pramod Sawant: CM - Goa </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Prem Singh Tamang">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images//Prem_Singh_Tamang.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Prem Singh Tamang: CM - Sikkim </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Siddaramaiah">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/17siddaramaiah.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Siddaramaiah: CM - Karnataka </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="vishnu deo sai">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/29_01_2021-vishnudev_sai_new.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Vishnu deo sai: CM - Chhattisgarh </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="Y. S. Jagan Mohan Reddy">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/48-Jagan-Mohan-Reddy.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Y. S. Jagan Mohan Reddy: CM - Andhra Pradesh </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="adityanath yogi">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/yogi.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Adtiyanath Yogi: CM - Uttarpradesh </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="amit shah">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/amit shah.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Amit Shah: HM of INDIA  </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-wrapper" data-player="arvind kejriwal">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/arvind.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Arvind Kejriwal: CM - Delhi </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card-wrapper" data-player="Bhagwant Singh Mann">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/bhagwant singh mann.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Bhagwant Singh Mann -CM: Punjab </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card-wrapper" data-player="Bhajan Lal Sharma">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./images/bhajan lal sharma.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Bhajan Lal Sharma: CM - Rajasthan </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <form action="/file-upload" class="dropzone" id="dropzone">
+                            <div class="dz-message needsclick">
+                                <img src="./images/upload.png" width="50vw" height="50vw"><br>
+                                <span class="note needsclick">Drop files here or click to upload</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-3 mx-auto">
+                        <button id="submitBtn" type="button" class="btn btn-success">Classify</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-8 error" id="error">
+                <p>Can't classify image. Classifier was not able to detect face and two eyes properly</p>
+            </div>
+
+            <div class="col-sm-4" id="resultHolder">
+            </div>
+            <div class="col-sm-4" id="divClassTable">
+                <table id="classTable">
+                    <tr>
+                        <th>Player</th>
+                        <th>Probability Score</th>
+                    </tr>
+                    <tr>
+                        <td>Adityanath Yogi</td>
+                        <td id="score_adityanath_yogi"></td>
+                    </tr>
+                    <tr>
+                        <td>Amit Shah</td>
+                        <td id="score_amit_shah"></td>
+                    </tr>
+                    <tr>
+                        <td>Arvind Kejriwal</td>
+                        <td id="score_arvind_kejriwal"></td>
+                    </tr>
+                    <tr>
+                        <td>Bhagwant Singh Mann</td>
+                        <td id="score_Bhagwant_Singh_Mann"></td>
+                    </tr>
+                    <tr>
+                        <td>Bhajan Lal Sharma</td>
+                        <td id="score_Bhajan_Lal_Sharma"></td>
+                    </tr>
+                    <tr>
+                        <td>Bhupendrabhai Patel</td>
+                        <td id="score_Bhupendrabhai_Patel"></td>
+                    </tr>
+                    <tr>
+                        <td>Conrad Sangma</td>
+                        <td id="score_Conrad_Sangma"></td>
+                    </tr>
+                    <tr>
+                        <td>Eknath Shinde</td>
+                        <td id="score_Eknath_Shinde"></td>
+                    </tr>
+                    <tr>
+                        <td>Hemant Soren</td>
+                        <td id="score_Hemant_Soren"></td>
+                    </tr>
+                    <tr>
+                        <td>Himanta Biswa Sarma</td>
+                        <td id="score_Himanta_Biswa_Sarma"></td>
+                    </tr>
+                    <tr>
+                        <td>Lalduhoma</td>
+                        <td id="score_Lalduhoma"></td>
+                    </tr>
+                    <tr>
+                        <td>M. K. Stalin</td>
+                        <td id="score_M__K__Stalin"></td>
+                    </tr>
+                    <tr>
+                        <td>Mamata Banerjee</td>
+                        <td id="score_Mamata_Banerjee"></td>
+                    </tr>
+                    <tr>
+                        <td>Manik Saha</td>
+                        <td id="score_Manik_Saha"></td>
+                    </tr>
+                    <tr>
+                        <td>manohar Lal Khattar</td>
+                        <td id="score_manohar_Lal_Khattar"></td>
+                    </tr>
+                    <tr>
+                        <td>Mohan Yadav</td>
+                        <td id="score_Mohan_Yadav"></td>
+                    </tr>
+                    <tr>
+                        <td>N. Biren Singh</td>
+                        <td id="score_N__Biren_Singh"></td>
+                    </tr>
+                    <tr>
+                        <td>N. Rangaswamy</td>
+                        <td id="score_N__Rangaswamy"></td>
+                    </tr>
+                    <tr>
+                        <td>Narendra modi</td>
+                        <td id="score_narendra_modi"></td>
+                    </tr>
+                    <tr>
+                        <td>Naveen Patnaik</td>
+                        <td id="score_Naveen_Patnaik"></td>
+                    </tr>
+                    <tr>
+                        <td>Neiphiu Rio</td>
+                        <td id="score_Neiphiu_Rio"></td>
+                    </tr>
+                    <tr>
+                        <td>Nitish Kumar</td>
+                        <td id="score_Nitish_Kumar"></td>
+                    </tr>
+                    <tr>
+                        <td>Pema Khandu</td>
+                        <td id="score_Pema_Khandu"></td>
+                    </tr>
+                    <tr>
+                        <td>Pinarayi Vijayan</td>
+                        <td id="score_Pinarayi_Vijayan"></td>
+                    </tr>
+                    <tr>
+                        <td>Pramod Sawant</td>
+                        <td id="score_Pramod_Sawant"></td>
+                    </tr>
+                    <tr>
+                        <td>Prem Singh Tamang</td>
+                        <td id="score_Prem_Singh_Tamang"></td>
+                    </tr>
+                    <tr>
+                        <td>Pushkar Singh Dhami</td>
+                        <td id="score_Pushkar_Singh_Dhami"></td>
+                    </tr>
+                    <tr>
+                        <td>Revanth Reddy</td>
+                        <td id="score_Revanth_Reddy"></td>
+                    </tr>
+                    <tr>
+                        <td>Siddaramaiah</td>
+                        <td id="score_Siddaramaiah"></td>
+                    </tr>
+                    <tr>
+                        <td>sukhvinder Singh Sukhu</td>
+                        <td id="score_sukhvinder_Singh_Sukhu"></td>
+                    </tr>
+                    <tr>
+                        <td>vishnu deo sai</td>
+                        <td id="score_vishnu_deo_sai"></td>
+                    </tr>
+                    <tr>
+                        <td>Y. S. Jagan Mohan Reddy</td>
+                        <td id="score_Y__S__Jagan_Mohan_Reddy"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="./dropzone.min.js"></script>
+<script src="./app.js"></script>
+
+</html>
